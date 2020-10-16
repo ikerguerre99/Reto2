@@ -1,0 +1,13 @@
+body{
+    background-color: #F5E174;
+}
+select option{
+    background-color: white;
+}
+#alerta{
+    background-color: red;
+    text-align: right;
+}
+#alerta p{
+    text-align: left;
+}
