@@ -21,6 +21,16 @@ body {
   width: 7%;
 }
 
+#botones{
+  display: flex;
+  justify-content: space-around;
+}
+#botones :nth-child(1){
+  margin-right: 5rem;
+}
+#botones :nth-child(2){
+  margin-right: 5rem;
+}
 /*Alerta*/
 
 #alerta {
@@ -58,9 +68,9 @@ body {
 /*Cards detro de containerCards*/
 
 #cartas {
-  margin: 5%;
+  display: flex;
+  justify-content: center;
   margin-top: 2%;
-  height: 300px;
 }
 
 #cartas img {
@@ -91,20 +101,21 @@ body {
 
 /*Ofertas*/
 
-#containerOfertas {
-  height: auto;
-  margin-top: 10%;
-  background-color: blueviolet;
-}
-
-#containerOfertas form {
-  margin-top: 3%;
-}
-
 #cards {
   margin: 5%;
-  height: 300px;
-  background-color: white;
+  height: auto;
+  /* background-color: white; */
+}
+
+
+#SelectCards{
+  display: flex;
+  justify-content: space-around;
+}
+
+form{
+  margin-top: 7%;
+  margin-bottom: 5%;
 }
 
 /*Carrousel*/
