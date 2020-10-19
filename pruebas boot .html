@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cssboot.css">
+    <script src="js/prueba.js"></script>
 </head>
 
 <body>
     <div class="row-md-3">
 
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light ">
             <img src="img/logo.png" class="img-fluid" id="logo">
             <div class="d-flex flex-row-reverse">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cambiar Idioma</button>
+                <button class="btn btn-outline-dark my-2 my-sm-0 btn-success" type="button">Cambiar Idioma</button>
+                <button class="btn btn-outline-dark my-2 my-sm-0 btn-success" type="button">Iniciar Sesión</button>
                 <a class="navbar-brand mr-sm-2" href="contacto.html">Contacto</a>
             </div>
         </nav>
@@ -31,6 +33,9 @@
         <div class="col-12" id="alerta">
             <p>Les avisamos que por consecuencia de el virus COVID19, nuestros vuelos tomarán las medidas de precaucion
                 necesarias para garantizar un vuelo seguro.</p>
+            <div class="boton" id="cerrarCovid">
+                <button id="botonCovid" type="button" onclick="cerrarBoton()">X</button>
+            </div>
         </div>
     </div>
     <!--Cerrar row alerta covid-->
@@ -39,7 +44,8 @@
         <div class="col" id="cartas">
 
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/newyork.jpg" alt="Card image cap">
+                <img id="imagen0" class="card-img-top" src="img/newyork.jpg" alt="Card image cap" onclick="mostrarInfo('0')">
+                <div id="centered0" class="centered inverted">190€</div>
                 <div class="card-body">
                     <h5 class="card-title">Nueva York</h5>
                     <p class="card-text">Nueva York siempre resulta familiar, incluso aunque no hayas estado nunca
@@ -55,7 +61,9 @@
         <div class="col" id="cartas">
 
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/amsterdam.jpg" alt="Card image cap">
+                <img id="imagen1" class="card-img-top" src="img/amsterdam.jpg" alt="Card image cap"
+                    onclick="mostrarInfo('1')">
+                <div id="centered1" class="centered inverted">220€</div>
                 <div class="card-body">
                     <h5 class="card-title">Amsterdam</h5>
                     <p class="card-text">Bienvenido a Ámsterdam, una de las ciudades más vanguardistas de Europa.
@@ -71,7 +79,9 @@
         <div class="col" id="cartas">
 
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/paris.jpg" alt="Card image cap">
+                <img id="imagen2" class="card-img-top" src="img/paris.jpg" alt="Card image cap"
+                    onclick="mostrarInfo('2')">
+                <div id="centered2" class="centered inverted">290€</div>
                 <div class="card-body">
                     <h5 class="card-title">Paris</h5>
                     <p class="card-text">Nueva York siempre resulta familiar, incluso aunque no hayas estado nunca
@@ -89,7 +99,22 @@
 
 
     <div class="row">
+        
         <div class="col-12" id="containerOfertas">
+            <form class="form-inline">
+                <div class="form-group col-3 offset-2">
+                    <label for="inputPais" class="col">País:</label>
+                    <select id="inputPais" class="form-control col-8" onclick="cargar('inputCiudad')">
+                    </select>
+                </div>
+                <div class="form-group col-3">
+                    <label for="inputCiudad" class="col">Ciudad:</label>
+                    <select id="inputCiudad" class="form-control col-8">
+                        <option selected>Elige...</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary col-1 col-offset-4">Buscar</button>
+            </form>
             <div class="row">
                 <div class="col" id="cards">Card1</div>
                 <div class="col" id="cards">Card2</div>
