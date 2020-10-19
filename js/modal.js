@@ -18,3 +18,4 @@ var modalBodyHTML ='<form>'+
 
 document.querySelector(".modal-header").innerHTML=modalHeaderHTML;
 document.querySelector(".modal-body").innerHTML=modalBodyHTML;
+
