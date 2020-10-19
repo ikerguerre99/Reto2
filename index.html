@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cssboot.css">
+    <script src="js/prueba.js"></script>
+</head>
+
+<body>
+    <div class="row-md-auto">
+
+        <nav class="navbar navbar-light">
+            <img src="img/logo.png" class="img-fluid" id="logo">
+            <div id="botones">
+                <button class="btn my-2 my-sm-0 btn-info" type="button">Contacto</a>
+                <button class="btn my-2 my-sm-0 btn-info" type="button">Iniciar Sesión</button>
+                <button class="btn my-2 my-sm-0 btn-info" type="button">Cambiar Idioma</button>
+            </div>
+        </nav>
+
+    </div>
+    <!--Cerrar row navbar-->
+
+    <div class="row">
+        <div class="col-12" id="alerta">
+            <p>Les avisamos que por consecuencia de el virus COVID19, nuestros vuelos tomarán las medidas de precaucion
+                necesarias para garantizar un vuelo seguro.</p>
+            <div class="boton" id="cerrarCovid">
+                <button id="botonCovid" type="button" onclick="cerrarBoton()">X</button>
+            </div>
+        </div>
+    </div>
+    <!--Cerrar row alerta covid-->
+
+    <div class="row">
+        <div class="col" id="cartas">
+
+            <div class="card" style="width: 23rem;">
+                <img id="imagen0" class="card-img-top" src="img/newyork.jpg" alt="Card image cap" onclick="mostrarInfo('0')">
+                <div id="centered0" class="centered inverted">190€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Nueva York</h5>
+                    <p class="card-text">Nueva York siempre resulta familiar, incluso aunque no hayas estado nunca
+                        antes. Como ha sido escenario de tantas series y películas o cuando veas los taxis amarillos.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saber más</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Cerrar primera col de carta-->
+
+        <div class="col" id="cartas">
+
+            <div class="card" style="width: 23rem;">
+                <img id="imagen1" class="card-img-top" src="img/amsterdam.jpg" alt="Card image cap"
+                    onclick="mostrarInfo('1')">
+                <div id="centered1" class="centered inverted">220€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Amsterdam</h5>
+                    <p class="card-text">Bienvenido a Ámsterdam, una de las ciudades más vanguardistas de Europa.
+                        Conocida como la Venecia del norte por sus mágicos canales y muchas zonas de la ciudad se
+                        encuentran bajo el nivel del mar.</p>
+                    <a href="#" class="btn btn-primary">Saber más</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Cerrar segunda col de carta-->
+
+        <div class="col" id="cartas">
+
+            <div class="card" style="width: 23rem;">
+                <img id="imagen2" class="card-img-top" src="img/paris.jpg" alt="Card image cap"
+                    onclick="mostrarInfo('2')">
+                <div id="centered2" class="centered inverted">290€</div>
+                <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text">Nueva York siempre resulta familiar, incluso aunque no hayas estado nunca
+                        antes. Como ha sido escenario de tantas series y películas o cuando veas los taxis amarillos.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saber más</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Cerrar tercera col de carta-->
+
+    </div>
+    <!--Cerrar row de cartas-->
+
+
+    
+            <form class="form-inline">
+                <div class="form-group col-3 offset-2">
+                    <label for="inputPais" class="col">País:</label>
+                    <select id="inputPais" class="form-control col-8" onclick="cargar('inputCiudad')">
+                    </select>
+                </div>
+                <div class="form-group col-3">
+                    <label for="inputCiudad" class="col">Ciudad:</label>
+                    <select id="inputCiudad" class="form-control col-8">
+                        <option selected>Elige...</option>
+                    </select>
+                </div>
+                <button href="#" type="button" class="btn btn-primary col-1 col-offset-4" onclick="sacarCards('inputCiudad', 'inputPais', 'SelectCards')">Buscar</button>
+            </form>
+     
+            <div id="SelectCards"></div>
+    <!--Carrusel imagenes inicio-->
+
+    <div class="row">
+
+        <div id="containerSlider" class="col">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="img/aerolinea1.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea2.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea3.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea4.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea5.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea6.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea7.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea8.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea9.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea10.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea11.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea12.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/aerolinea13.png" height="100" width="250" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Carrusel imagenes final-->
+
+    <div id="footer">
+        <div class="container-fluid bg-primary">
+            <div class="row ml-auto">
+                <div class="col-md-1 ">
+                    <img src="img/logo.png" class="">
+                </div>
+                <div class="col-10 text-center text-white mt-2">
+                    <p>Reto2<br>
+                        <a> Eider / Jagoba / Iker.G / Igor </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
