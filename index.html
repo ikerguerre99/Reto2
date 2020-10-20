@@ -21,10 +21,34 @@
             <img src="img/logo.png" class="img-fluid" id="logo">
             <div id="botones">
                 <button class="btn my-2 my-sm-0 btn-info" type="button">Contacto</a>
-                <button class="btn my-2 my-sm-0 btn-info" type="button">Iniciar Sesión</button>
+                <button class="btn my-2 my-sm-0 btn-info" type="button" data-target="#myModal" data-toggle="modal" onclick="modalCreate()">Iniciar Sesión</button>
                 <button class="btn my-2 my-sm-0 btn-info" type="button">Cambiar Idioma</button>
             </div>
         </nav>
+
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
 
     </div>
     <!--Cerrar row navbar-->
@@ -51,7 +75,7 @@
                     <p class="card-text">Nueva York siempre resulta familiar, incluso aunque no hayas estado nunca
                         antes. Como ha sido escenario de tantas series y películas o cuando veas los taxis amarillos.
                     </p>
-                    <a href="#" class="btn btn-primary">Saber más</a>
+                    <a href="#" class="btn btn-info">Saber más</a>
                 </div>
             </div>
 
@@ -69,7 +93,7 @@
                     <p class="card-text">Bienvenido a Ámsterdam, una de las ciudades más vanguardistas de Europa.
                         Conocida como la Venecia del norte por sus mágicos canales y muchas zonas de la ciudad se
                         encuentran bajo el nivel del mar.</p>
-                    <a href="#" class="btn btn-primary">Saber más</a>
+                    <a href="#" class="btn btn-info">Saber más</a>
                 </div>
             </div>
 
@@ -87,7 +111,7 @@
                     <p class="card-text">Nueva York siempre resulta familiar, incluso aunque no hayas estado nunca
                         antes. Como ha sido escenario de tantas series y películas o cuando veas los taxis amarillos.
                     </p>
-                    <a href="#" class="btn btn-primary">Saber más</a>
+                    <a href="#" class="btn btn-info">Saber más</a>
                 </div>
             </div>
 
@@ -98,20 +122,19 @@
     <!--Cerrar row de cartas-->
 
 
-    
             <form class="form-inline">
-                <div class="form-group col-3 offset-2">
-                    <label for="inputPais" class="col">País:</label>
+                <div class="form-group col-3 offset-3">
+                    <!--<label for="inputPais" class="col">País:</label>-->
                     <select id="inputPais" class="form-control col-8" onclick="cargar('inputCiudad')">
                     </select>
                 </div>
                 <div class="form-group col-3">
-                    <label for="inputCiudad" class="col">Ciudad:</label>
+                    <!-- <label for="inputCiudad" class="col">Ciudad:</label> -->
                     <select id="inputCiudad" class="form-control col-8">
-                        <option selected>Elige...</option>
+                        <option selected>Ciudades...</option>
                     </select>
                 </div>
-                <button href="#" type="button" class="btn btn-primary col-1 col-offset-4" onclick="sacarCards('inputCiudad', 'inputPais', 'SelectCards')">Buscar</button>
+                <button href="#" type="button" class="btn btn-info col-1 col-offset-4" onclick="sacarCards('inputCiudad', 'inputPais', 'SelectCards')">Buscar</button>
             </form>
      
             <div id="SelectCards"></div>
@@ -170,7 +193,7 @@
     <!--Carrusel imagenes final-->
 
     <div id="footer">
-        <div class="container-fluid bg-primary">
+        <div class="container-fluid bg-info">
             <div class="row ml-auto">
                 <div class="col-md-1 ">
                     <img src="img/logo.png" class="">
