@@ -5,7 +5,8 @@
 body {
   margin: 1%;
   /*Para que no salga la barra de scroll de abajo*/
-  background-color: #F5E174;
+  background-image: url(../img/fondo.jpg);
+  background-attachment: fixed;
   box-sizing: border-box;
 }
 
@@ -30,6 +31,14 @@ body {
 }
 #botones :nth-child(2){
   margin-right: 5rem;
+}
+
+#modal{
+  background-image: url(../img/fondomodal.jpg);
+}
+
+.modal-header img{
+  height: 150px;
 }
 /*Alerta*/
 
@@ -118,6 +127,10 @@ form{
   margin-bottom: 5%;
 }
 
+
+div label{
+  font-weight: bold;
+}
 /*Carrousel*/
 
 #containerSlider {
