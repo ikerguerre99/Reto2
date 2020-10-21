@@ -1,0 +1,10 @@
+#maletas{
+    background-color: white;
+    padding: 3%;
+    text-align: left;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+#maletas h3{
+    text-align: center;
+}
