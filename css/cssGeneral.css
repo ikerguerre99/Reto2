@@ -21,17 +21,6 @@
   #logo {
     width: 7%;
   }
-  
-  #botones{
-    display: flex;
-    justify-content: space-around;
-  }
-  #botones :nth-child(1){
-    margin-right: 5rem;
-  }
-  #botones :nth-child(2){
-    margin-right: 3rem;
-  }
 
   /* footer */
 
