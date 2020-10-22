@@ -86,9 +86,16 @@
 }
 
 /*Select*/
-form{
-  margin-top: 7%;
+#select{
+   margin-top: 7%;
   margin-bottom: 5%;
+}
+.form-inline{
+align-items: stretch !important;
+}
+
+.form-inline .form-group {
+  box-sizing: content-box !important;
 }
 
 /*Select cards*/
