@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event){
     
 })
 
+
 function returnDatos(){
     if(correo() && clave()){
         return true;

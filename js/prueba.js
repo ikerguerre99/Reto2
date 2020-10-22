@@ -5,33 +5,78 @@ visibilidad[1] = false;
 visibilidad[2] = false;
 
 
+function paginaPrincipal(){
+    document.location.href = "index.html";
+}
+
+function paginaContacto(){
+    document.location.href = "contacto.html";
+}
+function paginaMaletas(){
+    document.location.href = "maletas.html";
+}
+//Crear modal mediante js.
 function modalCreate() {
-    var modalHeaderHTML = "<div class='row'>" +
+    
+
+    //variable modal header.
+
+    var modalHeaderHTML = "<div id='contenedorModal'>"+
+        "<div class='row'>" +
         "<div class='col-3 offset-7'>" +
         "<img src='img/logo.png' id='imgModal'>" +
         "</div>" +
         "</div>";
 
+    //variable modal body
+    
     var modalBodyHTML = '<form>' +
         '<div class="form-group">' +
-        '<label for="exampleInputEmail1">Correo electronico:</label>' +
-        '<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">' +
+        '<label for="usuario">Usuario:</label>' +
+        '<input type="text" class="form-control" id="usuario" aria-describedby="emailHelp">' +
         '</div>' +
         '<div class="form-group">' +
-        '<label for="exampleInputPassword1">Contraseña:</label>' +
-        '<input type="password" class="form-control" id="exampleInputPassword1">' +
+        '<label for="contraseña">Contraseña:</label>' +
+        '<input type="password" class="form-control" id="contraseña">' +
         '</div>' +
-        '<button type="submit" class="btn btn-primary">Submit</button>' +
-        '</form>';
+        '<button type="button" class="btn btn-primary" id="enviar"onclick="validar()">Submit</button>' +
+        '</form></div>';
 
     document.querySelector(".modal-header").innerHTML = modalHeaderHTML;
     document.querySelector(".modal-body").innerHTML = modalBodyHTML;
 }
 
+//fin de modal
 
+
+//validacion
+
+
+
+var usuario = "ikaslea";
+var contraseña = "ikaslea";
+
+function validar(){
+    inputUsuario = document.getElementById("usuario").value;
+    inputPasswd = document.getElementById("contraseña").value;
+    cierre = document.getElementById("close");
+
+    if(inputUsuario == usuario && inputPasswd == contraseña){
+        alert("Te has logueado correctamente.");
+        document.getElementById("inicio").style.display="none";
+        document.getElementById("enviar").setAttribute("data-dismiss","modal");
+        
+    }else{
+        alert("Datos incorrectos.")
+    }
+}
+
+
+
+//mostrar precio hover card.
 
 function mostrarInfo(num) {
-    console.log(num);
+    //console.log(num);
 
     if (visibilidad[num] == false) {
         console.log("visible");
@@ -48,12 +93,14 @@ function mostrarInfo(num) {
     }
 }
 
+
+//Cerrar el boton de alerta covid.
 function cerrarBoton() {
     document.getElementById("alerta").style.visibility = "hidden"
 }
 
 
-/*Select ciudades*/
+/*Select ciudades con arrays*/
 var paises = ["Pais...", "España", "Francia", "Islandia", "Países_Bajos"];
 
 var ciudades = new Array(4);
@@ -92,6 +139,7 @@ informacion[3][2] = ["Amsterdam3.jpg", "OUDE KERK", "La Oude Kerk es el edificio
 
 document.addEventListener("DOMContentLoaded", cargarPaises); // cuando se carga la pagina, se carga el primer select con los paises
 
+//Escribir en pantalla los paises (option)
 function cargarPaises() {
     var html = "";
     for (let i = 0; i < paises.length; i++) {
@@ -100,7 +148,9 @@ function cargarPaises() {
     document.getElementById('inputPais').innerHTML = html;
 }
 
-function cargar(id) { //al elegir el pais nos salen algunas ciudades en el segundo select
+
+//al elegir el pais nos salen algunas ciudades en el segundo select
+function cargar(id) {
     var html = "";
 
     var index = document.getElementById('inputPais').selectedIndex; // posicion del pais que hemos elegido, para buscar el pais en el array paises
@@ -110,6 +160,8 @@ function cargar(id) { //al elegir el pais nos salen algunas ciudades en el segun
     }
     document.getElementById(id).innerHTML = html;
 }
+
+//sacar las cards en pantalla al seleccionar y dalr a buscar
 
 function sacarCards(idCiudad, idPais, idCards) {
     var indexCiudad = document.getElementById(idCiudad).selectedIndex;
