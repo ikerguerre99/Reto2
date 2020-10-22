@@ -55,10 +55,15 @@ body {
 
 }
 #textogrande{
-  color: white;
+  color: black;
+  padding:20px;
+  background-color: white;
+  border-radius: 10px;
 }
 #info{
   margin-top: 2%;
+   margin-left: 5%;
+  margin-right: 5%;
 }
 #mapavideo{
   display: flex;
