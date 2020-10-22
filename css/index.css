@@ -1,3 +1,18 @@
+/*Botones*/
+
+#botones{
+    display: flex;
+    justify-content: space-around;
+  }
+  #botones :nth-child(1){
+    margin-right: 5rem;
+  }
+  #botones :nth-child(2){
+    margin-right: 3rem;
+  }
+
+/*Modal*/
+
 .modal-header img{
   height: 150px;
 }
