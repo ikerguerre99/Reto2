@@ -3,7 +3,6 @@
   }
   
   body {
-    margin: 1%;
     /*Para que no salga la barra de scroll de abajo*/
     background-image: url(../img/fondo.jpg);
     background-attachment: fixed;
