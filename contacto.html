@@ -15,53 +15,53 @@
 </head>
 
 <body>
-    <div class="contenedorContacto">
 
         <!--logo-->
+        
         <div class="row justify-content-center">
             <div class="col-2">
                 <img src="img/logo.png" class="img-fluid" onclick="paginaPrincipal()">
             </div>
         </div>
 
-
         <!--formulario-->
-        <div class="row mt-5 justify-content-center">
-            <div class="col-6 ">
-                <form>
-                    <div class="form-group row">
-                        <div class="col-sm-2">
-                            <label for="contacto">Contacto:</label>
+        <div id="contenedorContacto">
+            <div class="row mt-5 justify-content-center" id="primero">
+                <div class="col-6 ">
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="contacto">Contacto:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="">
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="">
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="correo">Correo:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-2">
-                            <label for="correo">Correo:</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="">
-                        </div>
-                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="row mt-3 justify-content-center">
-            <div class="col-6">
-                <div class="form-group">
-                    <label for="areaTexto">Inserte un comentario aqui</label>
-                    <textarea class="form-control col" id="" rows="6" name="areaTexto"></textarea>
+            <div class="row mt-3 justify-content-center">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="areaTexto">Inserte un comentario aqui:</label>
+                        <textarea class="form-control col" id="" rows="6" name="areaTexto"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="botonSubmit">
+                <div class="col-md-12">
+                    <button class="btn btn-info">Enviar</button>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button class="btn btn-info">Enviar</button>
-            </div>
-        </div>
-
 
         <!--Footer-->
         <div class="row">
@@ -83,10 +83,9 @@
         </div>
 
 
-
-    </div>
     <!-- Optional JavaScript -->
     <script src="js/validar.js"></script>
+    <script src="js/general.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

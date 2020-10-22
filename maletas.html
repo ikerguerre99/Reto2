@@ -16,12 +16,8 @@
   <body>
       <!-- nav de arriba -->
     <nav class="navbar navbar-light">
-        <img src="img/logo.png" class="img-fluid" id="logo">
-        <div id="botones">
-            <button class="btn my-2 my-sm-0 btn-info" type="button">Contacto</a>
-            <button class="btn my-2 my-sm-0 btn-info" type="button" data-target="#myModal" data-toggle="modal" onclick="modalCreate()">Iniciar Sesión</button>
-            <button class="btn my-2 my-sm-0 btn-info" type="button">Maletas</a>
-        </div>
+        <img src="img/logo.png" class="img-fluid" id="logo" onclick="paginaPrincipal()">
+        
     </nav>
     <div id="maletas" class="col-8 offset-2">
         <h3>Equipaje facturado en Ryanair</h3>
@@ -52,6 +48,7 @@
     </div>
       
     <!-- Optional JavaScript -->
+    <script src="js/general.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

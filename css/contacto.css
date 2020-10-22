@@ -1,3 +1,14 @@
-.contenedorContacto{
-    
+#contenedorContacto{
+    height: 80%;
+    background-color: white;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 8px;
+}
+#primero{
+    padding-top: 2%;
+}
+
+#botonSubmit{
+    padding-bottom: 2%;
 }
