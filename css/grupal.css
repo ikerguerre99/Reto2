@@ -1,0 +1,86 @@
+/*Header*/
+
+#logo {
+    width: 7%;
+    margin-bottom: 10px;
+}
+
+/*Imagen*/
+
+#container {
+    position: relative;
+    display: inline-block;
+}
+
+#containerimg {
+    position: relative;
+}
+
+#containerimg img {
+    width: 100%;
+    height: 70vh;
+}
+
+#textoNY {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 9vw;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+
+#textoAM {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 9vw;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+
+#textoPR {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    color: white;
+    font-size: 9vw;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+
+#textogrande {
+    color: black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#info {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#iframeMapa {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+#video {
+    margin-top: 50px;
+}
+
+@media screen and ( max-width: 1215px) {
+    #video {
+        margin-bottom: 7%;
+    }
+    #iframeMapa {
+        margin-top: 5%;
+    }
+}

@@ -1,14 +1,18 @@
-#maletas{
+#maletas {
     background-color: white;
     padding: 3%;
     text-align: left;
     margin-bottom: 2%;
     border-radius: 10px;
 }
-#maletas h3{
+
+#maletas h3 {
     text-align: center;
 }
 
-#maletas img{
-    margin-left: 20%;
+#maletas img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

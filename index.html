@@ -72,7 +72,7 @@
                 <img id="imagen0" class="card-img-top" src="img/newyork.jpg" alt="Card image cap" onclick="mostrarInfo('0')">
                 <div id="centered0" class="centered inverted">190€</div>
                 <div class="card-body">
-                    <h5 class="card-title">Nueva York</h5>
+                    <h5 class="card-title">New York</h5>
                     <p class="card-text">Nueva York siempre resulta familiar, incluso aunque no hayas estado nunca
                         antes. Como ha sido escenario de tantas series y películas o cuando veas los taxis amarillos.
                     </p>
@@ -122,20 +122,25 @@
     <!--Cerrar row de cartas-->
 
 
-            <form class="form-inline">
-                <div class="form-group col-3 offset-3">
-                    <!--<label for="inputPais" class="col">País:</label>-->
-                    <select id="inputPais" class="form-control col-8" onclick="cargar('inputCiudad')">
-                    </select>
-                </div>
-                <div class="form-group col-3">
-                    <!-- <label for="inputCiudad" class="col">Ciudad:</label> -->
-                    <select id="inputCiudad" class="form-control col-8">
-                        <option selected>Ciudades...</option>
-                    </select>
-                </div>
-                <button href="#" type="button" class="btn btn-info col-1 col-offset-4" onclick="sacarCards('inputCiudad', 'inputPais', 'SelectCards')">Buscar</button>
-            </form>
+    <div id ="select">
+        <form class="form-inline row justify-content-center">
+            <div class="form-group col-2" id="select1">
+                <!--<label for="inputPais" class="col">País:</label>-->
+                <select id="inputPais" class="form-control " onclick="cargar('inputCiudad')">
+                </select>
+            </div>
+            <div class="form-group col-2" id="select2">
+                <!-- <label for="inputCiudad" class="col">Ciudad:</label> -->
+                <select id="inputCiudad" class="form-control ">
+                    <option selected>Ciudades...</option>
+                </select>
+            </div>
+            <div class="col-1">
+                <button href="#" type="button" class="btn btn-info"
+                    onclick="sacarCards('inputCiudad', 'inputPais', 'SelectCards')">Buscar</button>
+            </div>
+        </form>
+    </div>
      
             <div id="SelectCards"></div>
     <!--Carrusel imagenes inicio-->
@@ -198,7 +203,7 @@
                 <div class="col-md-1 ">
                     <img src="img/logo.png" class="">
                 </div>
-                <div class="col-10 text-center text-white mt-2">
+                <div class="col-10 text-center text-white mt-2" id="textoFooter">
                     <p>Reto2<br>
                         <a> Eider / Jagoba / Iker.G / Igor </a></p>
                 </div>

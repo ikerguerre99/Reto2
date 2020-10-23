@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/infoAmsterdam.css">
+    <link rel="stylesheet" href="css/grupal.css">
     <link rel="stylesheet" href="css/cssGeneral.css">
 </head>
 
@@ -27,8 +27,9 @@
     <!--Imagen del lugar-->
     <div id="containerimg">
         <img src="img/AmsterdamInfo.jpg">
+        <div id="textoAM">AMSTERDAM </div>
     </div>
-    <div id="texto">AMSTERDAM </div>
+    
 
     <div id="info">
         <p id="textogrande">
@@ -53,13 +54,26 @@
             son también visitas obligadas. Ámsterdam es una ciudad única que te cautivará. Todos tienen cabida aqui
         </p>
     </div>
-    <div id="mapavideo">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.8924297995!2d4.763878108967292!3d52.354582834316005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Herbehereak!5e0!3m2!1seu!2ses!4v1603191232948!5m2!1seu!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <div id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2wC3q3D6MXs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <div class="row">
+        <div class="col">
+            <div id="iframeMapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.8924297995!2d4.763878108967292!3d52.354582834316005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Herbehereak!5e0!3m2!1seu!2ses!4v1603191232948!5m2!1seu!2ses"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0" id="mapa"></iframe>
+            </div>
+        </div>
+        <div class="col">
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2wC3q3D6MXs" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
-    </div>
-  
+
 
     <div id="footer">
         <div class="container-fluid bg-primary">
@@ -67,7 +81,7 @@
                 <div class="col-md-1 ">
                     <img src="img/logo.png" class="">
                 </div>
-                <div class="col-10 text-center text-white mt-2">
+                <div class="col-10 text-center text-white mt-2" id="textoFooter">
                     <p>Reto2<br>
                         <a> Eider / Jagoba / Iker.G / Igor </a></p>
                 </div>
